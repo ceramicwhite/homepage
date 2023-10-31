@@ -1,5 +1,5 @@
 ARG VARIANT="16-buster"
-FROM mcr.microsoft.com/vscode/devcontainers/javascript-node:${VARIANT}
+FROM mcr.microsoft.com/vscode/devcontainers/universal
 
 RUN npm install -g pnpm
 
