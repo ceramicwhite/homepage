@@ -254,7 +254,8 @@ export async function servicesFromKubernetes() {
           ingress.metadata.annotations &&
           ingress.metadata.annotations[`${ANNOTATION_BASE}/enabled`] === "true" &&
           (!ingress.metadata.annotations[`${ANNOTATION_BASE}/instance`] ||
-            ingress.metadata.annotations[`${ANNOTATION_BASE}/instance`] === instanceName),
+            ingress.metadata.annotations[`${ANNOTATION_BASE}/instance`] === instanceName ||
+            `${ANNOTATION_BASE}/instance.${instanceName}` in ingress.metadata.annotations),
       )
       .map((ingress) => {
         let constructedService = {
@@ -398,7 +399,10 @@ export function cleanServiceGroups(groups) {
           expandOneStreamToTwoRows,
           showEpisodeNumber,
 
-          // glances, pihole
+          // frigate
+          enableRecentEvents,
+
+          // glances, mealie, pihole, pfsense
           version,
 
           // glances
@@ -455,6 +459,10 @@ export function cleanServiceGroups(groups) {
 
           // sonarr, radarr
           enableQueue,
+
+          // stocks
+          watchlist,
+          showUSMarketStatus,
 
           // truenas
           enablePools,
@@ -550,7 +558,7 @@ export function cleanServiceGroups(groups) {
           if (snapshotHost) cleanedService.widget.snapshotHost = snapshotHost;
           if (snapshotPath) cleanedService.widget.snapshotPath = snapshotPath;
         }
-        if (["glances", "pihole"].includes(type)) {
+        if (["glances", "mealie", "pfsense", "pihole"].includes(type)) {
           if (version) cleanedService.widget.version = version;
         }
         if (type === "glances") {
@@ -599,8 +607,15 @@ export function cleanServiceGroups(groups) {
             cleanedService.widget.bitratePrecision = parseInt(bitratePrecision, 10);
           }
         }
+        if (type === "stocks") {
+          if (watchlist) cleanedService.widget.watchlist = watchlist;
+          if (showUSMarketStatus) cleanedService.widget.showUSMarketStatus = showUSMarketStatus;
+        }
         if (type === "wgeasy") {
           if (threshold !== undefined) cleanedService.widget.threshold = parseInt(threshold, 10);
+        }
+        if (type === "frigate") {
+          if (enableRecentEvents !== undefined) cleanedService.widget.enableRecentEvents = enableRecentEvents;
         }
       }
 
