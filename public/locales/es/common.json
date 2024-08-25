@@ -12,7 +12,7 @@
         "number": "{{value, number}}",
         "ms": "{{value, number}}",
         "date": "{{value, date}}",
-        "relativeDate": "{{value, relativeDate}}",
+        "relativeDate": "{{valor, relativaFecha}}",
         "uptime": "{{value, uptime}}",
         "months": "me",
         "days": "d",
@@ -31,7 +31,7 @@
     },
     "weather": {
         "current": "Ubicación actual",
-        "allow": "Clic para permitir",
+        "allow": "Pulsa para permitir",
         "updating": "Actualizando",
         "wait": "Espera, por favor"
     },
@@ -77,9 +77,9 @@
         "unknown": "Desconocido",
         "healthy": "Saludable",
         "starting": "Comenzando",
-        "unhealthy": "Insalubre",
+        "unhealthy": "No saludable",
         "not_found": "No encontrado",
-        "exited": "Salida",
+        "exited": "Terminado",
         "partial": "Parcial"
     },
     "ping": {
@@ -277,11 +277,11 @@
         "approved": "Aprobado",
         "available": "Disponible"
     },
-    "pialert": {
+    "netalertx": {
         "total": "Total",
         "connected": "Conectado",
         "new_devices": "Nuevos dispositivos",
-        "down_alerts": "Alertas de caídas"
+        "down_alerts": "Alertas de caída"
     },
     "pihole": {
         "queries": "Consultas",
@@ -427,7 +427,7 @@
         "custom": "Personalizado",
         "visit": "Visitar",
         "url": "Enlace",
-        "searchsuggestion": "Suggestion"
+        "searchsuggestion": "Sugerencia"
     },
     "wmo": {
         "0-day": "Soleado",
@@ -544,14 +544,14 @@
     "hdhomerun": {
         "channels": "Canales",
         "hd": "Alta definición",
-        "tunerCount": "Tuners",
+        "tunerCount": "Sintonizadores",
         "channelNumber": "Canal",
-        "channelNetwork": "Network",
-        "signalStrength": "Strength",
-        "signalQuality": "Quality",
-        "symbolQuality": "Quality",
+        "channelNetwork": "Red",
+        "signalStrength": "Intensidad",
+        "signalQuality": "Calidad",
+        "symbolQuality": "Calidad",
         "networkRate": "Tasa de bits",
-        "clientIP": "Client"
+        "clientIP": "Cliente"
     },
     "scrutiny": {
         "passed": "Aprobado",
@@ -798,10 +798,10 @@
     },
     "openwrt": {
         "uptime": "Tiempo activo",
-        "cpuLoad": "CPU Load Avg (5m)",
+        "cpuLoad": "Carga promedio del CPU (5m)",
         "up": "Activo",
         "down": "Inactivo",
-        "bytesTx": "Transmitted",
+        "bytesTx": "Transmitido",
         "bytesRx": "Recibido"
     },
     "uptimerobot": {
@@ -826,51 +826,84 @@
         "noEventsFound": "No se encontraron eventos"
     },
     "romm": {
-        "platforms": "Platforms",
-        "totalRoms": "Total ROMs"
+        "platforms": "Plataformas",
+        "totalRoms": "ROMs totales"
     },
     "netdata": {
-        "warnings": "Warnings",
-        "criticals": "Criticals"
+        "warnings": "Advertencias",
+        "criticals": "Críticos"
     },
     "plantit": {
-        "events": "Events",
-        "plants": "Plants",
+        "events": "Eventos",
+        "plants": "Plantas",
         "photos": "Fotos",
-        "species": "Species"
+        "species": "Especies"
     },
     "gitea": {
-        "notifications": "Notifications",
+        "notifications": "Notificaciones",
         "issues": "Números",
-        "pulls": "Pull Requests"
+        "pulls": "Solicitudes de cambios"
     },
     "stash": {
-        "scenes": "Scenes",
-        "scenesPlayed": "Scenes Played",
-        "playCount": "Total Plays",
-        "playDuration": "Time Watched",
-        "sceneSize": "Scenes Size",
-        "sceneDuration": "Scenes Duration",
+        "scenes": "Escenas",
+        "scenesPlayed": "Escenas reproducidas",
+        "playCount": "Reproducciones totales",
+        "playDuration": "Tiempo visto",
+        "sceneSize": "Tamaño de las escenas",
+        "sceneDuration": "Duración de las escenas",
         "images": "Imágenes",
-        "imageSize": "Images Size",
+        "imageSize": "Tamaño de imagen",
         "galleries": "Galerías",
-        "performers": "Performers",
-        "studios": "Studios",
+        "performers": "Intérpretes",
+        "studios": "Estudios",
         "movies": "Películas",
         "tags": "Etiquetas",
-        "oCount": "O Count"
+        "oCount": "O cuenta"
     },
     "tandoor": {
         "users": "Usuarios",
         "recipes": "Recetas",
-        "keywords": "Keywords"
+        "keywords": "Palabras clave"
     },
     "homebox": {
-        "items": "Items",
+        "items": "Objetos",
         "totalWithWarranty": "Con Garantía",
         "locations": "Ubicaciones",
-        "labels": "Labels",
+        "labels": "Etiquetas",
         "users": "Usuarios",
-        "totalValue": "Total Value"
+        "totalValue": "Valor total"
+    },
+    "crowdsec": {
+        "alerts": "Alertas",
+        "bans": "Baneos"
+    },
+    "wgeasy": {
+        "connected": "Conectado",
+        "enabled": "Activado",
+        "disabled": "Desactivado",
+        "total": "Total"
+    },
+    "swagdashboard": {
+        "proxied": "Proxy activado",
+        "auth": "Con Autenticación",
+        "outdated": "Desactualizado",
+        "banned": "Baneado"
+    },
+    "myspeed": {
+        "ping": "Ping",
+        "download": "Descarga",
+        "upload": "Subida"
+    },
+    "stocks": {
+        "stocks": "Acciones",
+        "loading": "Cargando",
+        "open": "Abierto - Mercado EEUU",
+        "closed": "Cerrado - Mercado EEUU",
+        "invalidConfiguration": "Configuración no válida"
+    },
+    "frigate": {
+        "cameras": "Cameras",
+        "uptime": "Tiempo activo",
+        "version": "Versión"
     }
 }

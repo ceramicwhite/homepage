@@ -277,7 +277,7 @@
         "approved": "מאושר",
         "available": "זמין"
     },
-    "pialert": {
+    "netalertx": {
         "total": "סה\"כ",
         "connected": "Connected",
         "new_devices": "New Devices",
@@ -872,5 +872,38 @@
         "labels": "Labels",
         "users": "Users",
         "totalValue": "Total Value"
+    },
+    "crowdsec": {
+        "alerts": "Alerts",
+        "bans": "Bans"
+    },
+    "wgeasy": {
+        "connected": "Connected",
+        "enabled": "מופעל",
+        "disabled": "מבוטל",
+        "total": "סה\"כ"
+    },
+    "swagdashboard": {
+        "proxied": "Proxied",
+        "auth": "With Auth",
+        "outdated": "Outdated",
+        "banned": "Banned"
+    },
+    "myspeed": {
+        "ping": "Ping",
+        "download": "Download",
+        "upload": "Upload"
+    },
+    "stocks": {
+        "stocks": "Stocks",
+        "loading": "Loading",
+        "open": "Open - US Market",
+        "closed": "Closed - US Market",
+        "invalidConfiguration": "Invalid Configuration"
+    },
+    "frigate": {
+        "cameras": "Cameras",
+        "uptime": "Uptime",
+        "version": "Version"
     }
 }

@@ -277,7 +277,7 @@
         "approved": "Aprobita",
         "available": "Havebla"
     },
-    "pialert": {
+    "netalertx": {
         "total": "Totalo",
         "connected": "Connected",
         "new_devices": "New Devices",
@@ -872,5 +872,38 @@
         "labels": "Labels",
         "users": "Uzantoj",
         "totalValue": "Total Value"
+    },
+    "crowdsec": {
+        "alerts": "Alerts",
+        "bans": "Bans"
+    },
+    "wgeasy": {
+        "connected": "Connected",
+        "enabled": "Enabled",
+        "disabled": "Disabled",
+        "total": "Totalo"
+    },
+    "swagdashboard": {
+        "proxied": "Proxied",
+        "auth": "With Auth",
+        "outdated": "Outdated",
+        "banned": "Banned"
+    },
+    "myspeed": {
+        "ping": "Sondaĵo",
+        "download": "Elŝuti",
+        "upload": "Alŝuti"
+    },
+    "stocks": {
+        "stocks": "Stocks",
+        "loading": "Loading",
+        "open": "Open - US Market",
+        "closed": "Closed - US Market",
+        "invalidConfiguration": "Invalid Configuration"
+    },
+    "frigate": {
+        "cameras": "Cameras",
+        "uptime": "Uptime",
+        "version": "Version"
     }
 }

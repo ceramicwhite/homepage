@@ -1,6 +1,5 @@
 import { useTranslation } from "next-i18next";
 
-import Error from "../components/error";
 import Container from "../components/container";
 import Block from "../components/block";
 
@@ -74,30 +73,23 @@ const defaultSystemInterval = 30000; // This data (OS, hostname, distribution) i
 
 export default function Component({ service }) {
   const { widget } = service;
-  const { chart, refreshInterval = defaultInterval } = widget;
+  const { chart, refreshInterval = defaultInterval, version = 3 } = widget;
 
-  const { data: quicklookData, errorL: quicklookError } = useWidgetAPI(service.widget, "quicklook", {
+  const { data: quicklookData, errorL: quicklookError } = useWidgetAPI(service.widget, `${version}/quicklook`, {
     refreshInterval,
   });
 
-  const { data: systemData, errorL: systemError } = useWidgetAPI(service.widget, "system", {
+  const { data: systemData, errorL: systemError } = useWidgetAPI(service.widget, `${version}/system`, {
     refreshInterval: defaultSystemInterval,
   });
 
-  if (quicklookError) {
-    return (
-      <Container chart={chart}>
-        <Error error={quicklookError} />
-      </Container>
-    );
+  if (quicklookError || (quicklookData && quicklookData.error)) {
+    const qlError = quicklookError || quicklookData.error;
+    return <Container error={qlError} widget={widget} />;
   }
 
   if (systemError) {
-    return (
-      <Container chart={chart}>
-        <Error error={systemError} />
-      </Container>
-    );
+    return <Container error={systemError} service={service} />;
   }
 
   const dataCharts = [];

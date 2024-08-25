@@ -15,8 +15,8 @@
         "relativeDate": "{{value, relativeDate}}",
         "uptime": "{{value, uptime}}",
         "months": "mo",
-        "days": "d",
-        "hours": "h",
+        "days": "g",
+        "hours": "o",
         "minutes": "m",
         "seconds": "s"
     },
@@ -277,7 +277,7 @@
         "approved": "Approvati",
         "available": "Disponibili"
     },
-    "pialert": {
+    "netalertx": {
         "total": "Totale",
         "connected": "Connesso",
         "new_devices": "Nuovi Dispositivi",
@@ -411,8 +411,8 @@
         "total": "Totale",
         "free": "Libero",
         "used": "In utilizzo",
-        "days": "d",
-        "hours": "h",
+        "days": "g",
+        "hours": "o",
         "crit": "Critico",
         "read": "Letti",
         "write": "Scrittura",
@@ -427,7 +427,7 @@
         "custom": "Personalizzato",
         "visit": "Visita",
         "url": "URL",
-        "searchsuggestion": "Suggestion"
+        "searchsuggestion": "Suggerimenti"
     },
     "wmo": {
         "0-day": "Soleggiato",
@@ -545,11 +545,11 @@
         "channels": "Canali",
         "hd": "HD",
         "tunerCount": "Tuners",
-        "channelNumber": "Channel",
-        "channelNetwork": "Network",
-        "signalStrength": "Strength",
-        "signalQuality": "Quality",
-        "symbolQuality": "Quality",
+        "channelNumber": "Canale",
+        "channelNetwork": "Rete",
+        "signalStrength": "Intensità",
+        "signalQuality": "Qualità",
+        "symbolQuality": "Qualità",
         "networkRate": "Bitrate",
         "clientIP": "Client"
     },
@@ -564,11 +564,11 @@
     },
     "peanut": {
         "battery_charge": "Battery Charge",
-        "ups_load": "UPS Load",
-        "ups_status": "UPS Status",
+        "ups_load": "Carico UPS",
+        "ups_status": "Stato UPS",
         "online": "Online",
-        "on_battery": "On Battery",
-        "low_battery": "Low Battery"
+        "on_battery": "Alimentazione a batteria",
+        "low_battery": "Batteria Quasi Scarica"
     },
     "nextdns": {
         "wait": "Attendere prego",
@@ -798,10 +798,10 @@
     },
     "openwrt": {
         "uptime": "Tempo di attività",
-        "cpuLoad": "CPU Load Avg (5m)",
+        "cpuLoad": "Media Carico Cpu (5m)",
         "up": "Up",
         "down": "Down",
-        "bytesTx": "Transmitted",
+        "bytesTx": "Trasmessi",
         "bytesRx": "Ricevuti"
     },
     "uptimerobot": {
@@ -826,36 +826,36 @@
         "noEventsFound": "Nessun evento trovato"
     },
     "romm": {
-        "platforms": "Platforms",
+        "platforms": "Piattaforme",
         "totalRoms": "Total ROMs"
     },
     "netdata": {
-        "warnings": "Warnings",
+        "warnings": "Avvisi",
         "criticals": "Criticals"
     },
     "plantit": {
-        "events": "Events",
+        "events": "Eventi",
         "plants": "Plants",
         "photos": "Foto",
-        "species": "Species"
+        "species": "Specie"
     },
     "gitea": {
-        "notifications": "Notifications",
+        "notifications": "Notifiche",
         "issues": "Problemi",
-        "pulls": "Pull Requests"
+        "pulls": "Richieste di Pull"
     },
     "stash": {
-        "scenes": "Scenes",
-        "scenesPlayed": "Scenes Played",
-        "playCount": "Total Plays",
-        "playDuration": "Time Watched",
-        "sceneSize": "Scenes Size",
-        "sceneDuration": "Scenes Duration",
-        "images": "Images",
-        "imageSize": "Images Size",
+        "scenes": "Scene",
+        "scenesPlayed": "Scene Riprodotte",
+        "playCount": "Totale Riproduzioni",
+        "playDuration": "Tempo Guardato",
+        "sceneSize": "Dimensione Delle Scene",
+        "sceneDuration": "Durata Delle Scene",
+        "images": "Immagini",
+        "imageSize": "Dimensioni immagine",
         "galleries": "Galleries",
-        "performers": "Performers",
-        "studios": "Studios",
+        "performers": "Esecutori",
+        "studios": "Studi",
         "movies": "Film",
         "tags": "Tag",
         "oCount": "O Count"
@@ -863,14 +863,47 @@
     "tandoor": {
         "users": "Utenti",
         "recipes": "Ricette",
-        "keywords": "Keywords"
+        "keywords": "Parole chiave"
     },
     "homebox": {
-        "items": "Items",
-        "totalWithWarranty": "With Warranty",
-        "locations": "Locations",
-        "labels": "Labels",
+        "items": "Elementi",
+        "totalWithWarranty": "Con Garanzia",
+        "locations": "Luoghi",
+        "labels": "Etichette",
         "users": "Utenti",
-        "totalValue": "Total Value"
+        "totalValue": "Valore totale"
+    },
+    "crowdsec": {
+        "alerts": "Allarmi",
+        "bans": "Bannati"
+    },
+    "wgeasy": {
+        "connected": "Connesso",
+        "enabled": "Abilitato",
+        "disabled": "Disabilitati",
+        "total": "Totale"
+    },
+    "swagdashboard": {
+        "proxied": "Proxied",
+        "auth": "With Auth",
+        "outdated": "Obsoleto",
+        "banned": "Bannato"
+    },
+    "myspeed": {
+        "ping": "Ping",
+        "download": "Download",
+        "upload": "Upload"
+    },
+    "stocks": {
+        "stocks": "Stocks",
+        "loading": "Loading",
+        "open": "Open - US Market",
+        "closed": "Closed - US Market",
+        "invalidConfiguration": "Invalid Configuration"
+    },
+    "frigate": {
+        "cameras": "Cameras",
+        "uptime": "Tempo di attività",
+        "version": "Versione"
     }
 }

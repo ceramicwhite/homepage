@@ -140,7 +140,7 @@
         "connectionStatusPendingDisconnect": "Pending Disconnect",
         "connectionStatusDisconnecting": "Disconnecting",
         "connectionStatusDisconnected": "Disconnected",
-        "connectionStatusConnected": "Forbundet",
+        "connectionStatusConnected": "Connected",
         "uptime": "Oppetid",
         "maxDown": "Max. Down",
         "maxUp": "Max. Up",
@@ -277,11 +277,11 @@
         "approved": "Godkendt",
         "available": "Tilgængelig"
     },
-    "pialert": {
+    "netalertx": {
         "total": "Total",
-        "connected": "Forbundet",
-        "new_devices": "Nye Enheder",
-        "down_alerts": "Nedadvarsler"
+        "connected": "Connected",
+        "new_devices": "New Devices",
+        "down_alerts": "Down Alerts"
     },
     "pihole": {
         "queries": "Forespørgsler",
@@ -872,5 +872,38 @@
         "labels": "Labels",
         "users": "Brugere",
         "totalValue": "Total Value"
+    },
+    "crowdsec": {
+        "alerts": "Advarsler",
+        "bans": "Bans"
+    },
+    "wgeasy": {
+        "connected": "Connected",
+        "enabled": "Aktiveret",
+        "disabled": "Deaktiveret",
+        "total": "Total"
+    },
+    "swagdashboard": {
+        "proxied": "Proxied",
+        "auth": "With Auth",
+        "outdated": "Outdated",
+        "banned": "Banned"
+    },
+    "myspeed": {
+        "ping": "Ping",
+        "download": "Download",
+        "upload": "Upload"
+    },
+    "stocks": {
+        "stocks": "Stocks",
+        "loading": "Loading",
+        "open": "Open - US Market",
+        "closed": "Closed - US Market",
+        "invalidConfiguration": "Invalid Configuration"
+    },
+    "frigate": {
+        "cameras": "Cameras",
+        "uptime": "Oppetid",
+        "version": "Version"
     }
 }

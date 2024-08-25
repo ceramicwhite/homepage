@@ -277,7 +277,7 @@
         "approved": "Schválené",
         "available": "Dostupné"
     },
-    "pialert": {
+    "netalertx": {
         "total": "Celkovo",
         "connected": "Pripojené",
         "new_devices": "Nové zariadenia",
@@ -846,7 +846,7 @@
     },
     "stash": {
         "scenes": "Scény",
-        "scenesPlayed": "Scenes Played",
+        "scenesPlayed": "Prehrané scény",
         "playCount": "Celkovo prehraní",
         "playDuration": "Pozeraný čas",
         "sceneSize": "Veľkosť obrazovky",
@@ -869,8 +869,41 @@
         "items": "Položky",
         "totalWithWarranty": "So zárukou",
         "locations": "Umiestnenia",
-        "labels": "Labels",
+        "labels": "Štítky",
         "users": "Používatelia",
-        "totalValue": "Total Value"
+        "totalValue": "Celková hodnota"
+    },
+    "crowdsec": {
+        "alerts": "Upozornenia",
+        "bans": "Bany"
+    },
+    "wgeasy": {
+        "connected": "Pripojené",
+        "enabled": "Povolené",
+        "disabled": "Zakázané",
+        "total": "Celkovo"
+    },
+    "swagdashboard": {
+        "proxied": "Proxied",
+        "auth": "With Auth",
+        "outdated": "Zastarané",
+        "banned": "Zabanovaný"
+    },
+    "myspeed": {
+        "ping": "Odozva",
+        "download": "Sťahovanie",
+        "upload": "Nahrávanie"
+    },
+    "stocks": {
+        "stocks": "Stocks",
+        "loading": "Loading",
+        "open": "Open - US Market",
+        "closed": "Closed - US Market",
+        "invalidConfiguration": "Invalid Configuration"
+    },
+    "frigate": {
+        "cameras": "Cameras",
+        "uptime": "Prevádzka",
+        "version": "Verzia"
     }
 }

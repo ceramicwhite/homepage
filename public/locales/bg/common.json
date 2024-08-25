@@ -16,7 +16,7 @@
         "uptime": "{{value, uptime}}",
         "months": "mo",
         "days": "d",
-        "hours": "h",
+        "hours": "ч",
         "minutes": "m",
         "seconds": "s"
     },
@@ -140,7 +140,7 @@
         "connectionStatusPendingDisconnect": "Pending Disconnect",
         "connectionStatusDisconnecting": "Disconnecting",
         "connectionStatusDisconnected": "Disconnected",
-        "connectionStatusConnected": "Свързано",
+        "connectionStatusConnected": "Connected",
         "uptime": "Uptime",
         "maxDown": "Max. Down",
         "maxUp": "Max. Up",
@@ -277,10 +277,10 @@
         "approved": "Одобрен",
         "available": "Наличен"
     },
-    "pialert": {
+    "netalertx": {
         "total": "Общо",
-        "connected": "Свързано",
-        "new_devices": "Нови устройства",
+        "connected": "Connected",
+        "new_devices": "New Devices",
         "down_alerts": "Down Alerts"
     },
     "pihole": {
@@ -412,7 +412,7 @@
         "free": "Свободни",
         "used": "Заети",
         "days": "d",
-        "hours": "h",
+        "hours": "ч",
         "crit": "Crit",
         "read": "Read",
         "write": "Write",
@@ -872,5 +872,38 @@
         "labels": "Labels",
         "users": "Потребители",
         "totalValue": "Total Value"
+    },
+    "crowdsec": {
+        "alerts": "Предупреждения",
+        "bans": "Bans"
+    },
+    "wgeasy": {
+        "connected": "Connected",
+        "enabled": "Активирано",
+        "disabled": "Деактивирано",
+        "total": "Общо"
+    },
+    "swagdashboard": {
+        "proxied": "Proxied",
+        "auth": "With Auth",
+        "outdated": "Outdated",
+        "banned": "Banned"
+    },
+    "myspeed": {
+        "ping": "Ping",
+        "download": "Download",
+        "upload": "Upload"
+    },
+    "stocks": {
+        "stocks": "Stocks",
+        "loading": "Loading",
+        "open": "Open - US Market",
+        "closed": "Closed - US Market",
+        "invalidConfiguration": "Invalid Configuration"
+    },
+    "frigate": {
+        "cameras": "Cameras",
+        "uptime": "Uptime",
+        "version": "Version"
     }
 }

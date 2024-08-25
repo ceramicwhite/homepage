@@ -2,7 +2,6 @@ import dynamic from "next/dynamic";
 import { useState, useEffect } from "react";
 import { useTranslation } from "next-i18next";
 
-import Error from "../components/error";
 import Container from "../components/container";
 import Block from "../components/block";
 
@@ -16,15 +15,15 @@ const defaultInterval = 1000;
 export default function Component({ service }) {
   const { t } = useTranslation();
   const { widget } = service;
-  const { chart, refreshInterval = defaultInterval, pointsLimit = defaultPointsLimit } = widget;
+  const { chart, refreshInterval = defaultInterval, pointsLimit = defaultPointsLimit, version = 3 } = widget;
 
   const [dataPoints, setDataPoints] = useState(new Array(pointsLimit).fill({ value: 0 }, 0, pointsLimit));
 
-  const { data, error } = useWidgetAPI(service.widget, "cpu", {
+  const { data, error } = useWidgetAPI(service.widget, `${version}/cpu`, {
     refreshInterval: Math.max(defaultInterval, refreshInterval),
   });
 
-  const { data: quicklookData, error: quicklookError } = useWidgetAPI(service.widget, "quicklook");
+  const { data: quicklookData, error: quicklookError } = useWidgetAPI(service.widget, `${version}/quicklook`);
 
   useEffect(() => {
     if (data) {
@@ -39,11 +38,7 @@ export default function Component({ service }) {
   }, [data, pointsLimit]);
 
   if (error) {
-    return (
-      <Container chart={chart}>
-        <Error error={error} />
-      </Container>
-    );
+    return <Container error={error} widget={widget} />;
   }
 
   if (!data) {
